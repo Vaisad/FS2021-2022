@@ -5,35 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leksjon 4</title>
     <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         input{
             display: block;
+        }
+        .papa{
+            display: inline;
         }
     </style>
 </head>
 <body>
     
-    <form>
+    <form method="POST">
         <div>
         <label for="Vardas">Vardas</label><br>
-        <input type="text" name="Vardas" placeholder="Vardas"><br>
+        <input type="text" name="Vardas" placeholder="Vardas" id="Vardas"><br>
         <label for="Pavarde">Pavarde</label><br>
-        <input type="text"  name="Pavarde" placeholder="Pavarde" >
+        <input type="text"  name="Pavarde" placeholder="Pavarde" id="Pavarde" >
 
          </div>
          <div>
         <label for="Address">Address</label><br>
-        <input type="text" name="Address" placeholder="Adresas"><br>
+        <input type="text" name="Address" placeholder="Adresas" id="Address"><br>
         <label for="pwd">Password:</label><br>
-        <input type="password" name="pwd" placeholder="paswordas">
+        <input type="password" name="pwd" placeholder="paswordas" id="Password">
         </div>
 
         <div>
         <label for="email">Email :</label>
-        <input type="text" id="email" placeholder="email"/>
-        <label for="review"></label>
+        <input type="text" id="email" placeholder="email" id="email"/>
         <textarea  name="review" rows="4" cols="50" placeholder="Rasyti teksta"></textarea>
         </div>
     </form>
+    <input class="papa" type="radio" name="Yes">
+    <label for="Yes">Yes</label>
+    <input class="papa" type="radio" name="No">
+    <label for="No">No</label>
     <input class="btn" type="submit" value="Submit" />
+    
+    <label for="naujienos" >Naujienos ?</label>
+    <select name="naujienos" id="naujienos">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+
 </body>
 </html>
