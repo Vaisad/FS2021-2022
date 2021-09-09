@@ -14,6 +14,12 @@
         .papa{
             display: inline;
         }
+        form  {
+            display: flex;
+           margin: 10px;
+        }
+        
+          
     </style>
 </head>
 <body>
@@ -44,12 +50,59 @@
     <input class="papa" type="radio" name="No">
     <label for="No">No</label>
     <input class="btn" type="submit" value="Submit" />
-    
+
     <label for="naujienos" >Naujienos ?</label>
     <select name="naujienos" id="naujienos">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
     </select>
+   <div>
+     <select multiple>
+    <option selected disabled>selected disable</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select>
+    </div>
+    <!-- Basic datalist -->
+    <label for="myBrowser">Choose a browser from this list:</label>
+    <input list="browsers" id="myBrowser" name="myBrowser" />
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+      <option value="Microsoft Edge">
+    </datalist>
 
+
+    <form action="#">
+        <div class="fields">
+           <div class="field name">
+              <input type="text" placeholder="Name"/>
+           </div>
+           <div class="field email">
+              <input type="email" placeholder="Email"/>
+           </div>
+        </div>
+        <div class="field">
+           <input type="text" placeholder="Subject"/>
+        </div>
+        <div class="field textarea">
+           <textarea
+              cols="30"
+              rows="10"
+              placeholder="Describe project...."
+           ></textarea>
+        </div>
+        <div class="button">
+           <button type="submit">Send message</button>
+        </div>
+     </form>
+
+
+     
 </body>
 </html>
