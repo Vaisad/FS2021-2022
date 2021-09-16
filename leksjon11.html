@@ -1,166 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="leksjon11.css">
-    <title>Leksjon 11</title>
-    <style>
-      * {
-  box-sizing: border-box;  
-}
-.container{
-    height: 100%;
-    width: 100%;
-}
-.parent1 div{
-    height: 30px;
-    width: 100%;
-    background-color: black;
-    margin: 3px;
-}
-
-.parent2 div{
-    height: 100px;
-    width: 100%;
-    background-color: red;
-    margin: 3px;
-}
-.parent3 div{
-    height: 200px;
-    width: 100%;
-    background-color: yellow;
-    margin: 3px;
-}
-.parent4 div{
-    height: 100px;
-    width: 100%;
-    background-color: brown;
-    margin: 3px;
-}
-
-@media screen and (min-width: 320px) {
-    .parent1{
-       
-        width: 100%;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .parent1{
-     
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
-    .parent1{
-     display: flex;
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 320px) {
-    .parent2{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .parent2{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
-    .parent2{
-    
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 320px) {
-    .parent3{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .parent3{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
-    .parent3{
-    display: flex;
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 320px) {
-    .parent4{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (max-width: 768px) {
-    .parent4{
-        
-        width: 100%;
-    }
-    
-}
-@media screen and (min-width: 1024px) {
-    .parent4{
-    display: flex;
-        width: 100%;
-    }
-    
-}
-
-
-
-
-    </style>
-</head>
-<body>
-    
-    
-
-<div class="container">
-    <div class="parent1">
-        <div class="child"></div>
-        <div class="child"></div>
-      </div>
-        
-      <div class="parent2">
-        <div class="child"></div>
-        
-      </div>
-        
-      <div class="parent3">
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-      </div>
-      <div class="parent4">
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-        <div class="child"></div>
-      </div>
-</div>
-  
-  
- 
-
-
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 11</title>
+	</head>
+	<body>
+		<title>Lesson 11</title>
+		<style>
+			.parent {
+			display: flex;
+			flex-direction: column;
+			}
+			.child-yellow div {
+			width: 100%;
+			height: 80px;
+			background-color: yellow;
+			margin-bottom: 10px;
+			}
+			.child-green div {
+			width: 100%;
+			height: 112px;
+			background-color: green;
+			margin-bottom: 10px;
+			}
+			.child-red div {
+			width: 100%;
+			height: 320px;
+			background-color: red;
+			margin-bottom: 10px;
+			}
+			.child-grey div {
+			width: 100%;
+			height: 80px;
+			background-color: grey;
+			margin-bottom: 10px;
+			}
+			.hidden {
+			display: none;
+			}
+			@media only screen and (min-width: 768px) {
+			.child-green div {
+			height: 320px;
+			}
+			.child-red div {
+			height: 112px;
+			}
+			.child-grey div {
+			width: 49.4%;
+			height: 112px;
+			}
+			.child-grey {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			}
+			.hidden{
+			display: block;
+			}
+			}
+			@media only screen and (min-width: 1024px) {
+			.child-yellow, .child-red, .child-grey{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			}
+			.child-yellow div {
+			width: 49.7%;
+			height: 96px;
+			}
+			.child-green div {
+			height: 480px;
+			}
+			.child-red div {
+			width: 32.9%;
+			height: 320px;
+			}
+			.child-grey div {
+			width: 24.5%;
+			height: 192px;
+			}
+			}
+		</style>
+		</head>
+		<body>
+			<div class="parent">
+				<div class="child-yellow">
+					<div></div>
+					<div></div>
+				</div>
+				<div class="child-green">
+					<div></div>
+				</div>
+				<div class="child-red">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="child-grey">
+					<div></div>
+					<div class="hidden"></div>
+					<div class="hidden"></div>
+					<div class="hidden"></div>
+				</div>
+			</div>
+	</body>
 </html>
