@@ -1,0 +1,155 @@
+
+
+
+body{
+    font-family: Lato, sans-serif;
+    }
+   nav{
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .logo{
+    height: 50px;
+    display: inline-block;
+    margin-top: 20px;
+    }
+    .nav-links{
+    list-style: none;
+    display: flex;
+    }
+    .nav-items a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #b6b6b6;
+    
+    }
+    i{
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #b6b6b6;
+    }
+    button{
+    margin-right: 30px;
+    }
+    i:hover{
+    cursor: pointer;
+    }
+    i{
+    color:  #151515;
+    }
+    button{
+    background-color: #b6b6b6;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: x-small;
+    cursor: pointer;
+    }
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    li{
+    
+    flex-grow: 1;
+    list-style: none;
+    }
+    .img-block img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    }
+    .menu-btn{
+    display: none;
+    }
+     @media screen and (max-width: 767px) {
+    .img-block{
+    display: flex;
+    flex-direction: row;
+    }
+    .nav-items {
+    display: none;
+    }
+    .fab, .fas, button{
+    display: none;
+    }
+    img{
+    margin-bottom: 25px;
+    }
+    .fa-bars{
+    display: flex;
+    font-size:50px;
+    margin-right: 70px;
+    }
+    .menu-btn{
+    display: block;
+    z-index: 999;
+    cursor: pointer;
+    }
+    .menu-btn i.active:before{
+    content: "\f00d";
+    }
+    }
+     @media screen and (min-width: 768px){
+    .img-block{
+    display: flex;
+    }
+    .img-block img{
+    width: 200px;
+    height: 200px;
+    }
+    img{
+    margin-bottom: 20px;
+    }
+
+
+    /* Atitraukus ekrana iki 1200 reikia nuo cia uzkomentuot */
+    
+    /* .nav-links{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    padding-right: 20px;
+    }
+      i{
+    display: inline-block;
+    text-decoration: none;
+    color: #b6b6b6;
+    }
+    button{
+    margin-left: 3px;
+    }
+    .fab{
+    padding: 10px 10px;
+    }
+    .nav-items a {
+       
+    font-size: xx-small;
+    display: inline-block;
+    padding: 5px 5px;
+    text-decoration: none;
+    color: #b6b6b6;
+    padding-top: 15px;
+    }
+    }     */
+    
+   
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+             
