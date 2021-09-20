@@ -1,155 +1,171 @@
-
-
-
-body{
-    font-family: Lato, sans-serif;
-    }
-   nav{
-    padding-left: 30px;
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    }
-    .logo{
-    height: 50px;
-    display: inline-block;
-    margin-top: 20px;
-    }
-    .nav-links{
-    list-style: none;
-    display: flex;
-    }
-    .nav-items a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #b6b6b6;
-    
-    }
-    i{
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #b6b6b6;
-    }
-    button{
-    margin-right: 30px;
-    }
-    i:hover{
-    cursor: pointer;
-    }
-    i{
-    color:  #151515;
-    }
-    button{
-    background-color: #b6b6b6;
-    border: none;
-    padding: 10px;
-    margin-left: 20px;
-    color: white;
-    font-size: x-small;
-    cursor: pointer;
-    }
-    ul{
-    display: flex;
-    flex-wrap: wrap;
-    }
-    li{
-    
-    flex-grow: 1;
-    list-style: none;
-    }
-    .img-block img{
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    }
-    .menu-btn{
-    display: none;
-    }
-     @media screen and (max-width: 767px) {
-    .img-block{
-    display: flex;
-    flex-direction: row;
-    }
-    .nav-items {
-    display: none;
-    }
-    .fab, .fas, button{
-    display: none;
-    }
-    img{
-    margin-bottom: 25px;
-    }
-    .fa-bars{
-    display: flex;
-    font-size:50px;
-    margin-right: 70px;
-    }
-    .menu-btn{
-    display: block;
-    z-index: 999;
-    cursor: pointer;
-    }
-    .menu-btn i.active:before{
-    content: "\f00d";
-    }
-    }
-     @media screen and (min-width: 768px){
-    .img-block{
-    display: flex;
-    }
-    .img-block img{
-    width: 200px;
-    height: 200px;
-    }
-    img{
-    margin-bottom: 20px;
-    }
-
-
-    /* Atitraukus ekrana iki 1200 reikia nuo cia uzkomentuot */
-    
-    /* .nav-links{
-    list-style: none;
-    display: flex;
-    padding-left: 0;
-    padding-right: 20px;
-    }
-      i{
-    display: inline-block;
-    text-decoration: none;
-    color: #b6b6b6;
-    }
-    button{
-    margin-left: 3px;
-    }
-    .fab{
-    padding: 10px 10px;
-    }
-    .nav-items a {
-       
-    font-size: xx-small;
-    display: inline-block;
-    padding: 5px 5px;
-    text-decoration: none;
-    color: #b6b6b6;
-    padding-top: 15px;
-    }
-    }     */
-    
-   
-        
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-             
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  nav{
+  display: flex;
+  padding: 30px;
+  }
+  .nav-links{
+  display: none;
+  }
+  .logo{
+  height: 70px;
+  object-fit: cover;
+  }
+  .menu-btn{
+  font-size: 50px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 8px;
+  }
+  .img-block{
+  display: grid;
+  grid-template-columns: 300px 300px ;
+  grid-template-rows:repeat(5, 350px) ;
+  justify-content: center;
+  gap: 50px;
+  }
+  .img-block img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+  @media screen and (min-width: 768px){
+  nav{
+  justify-content: space-between;
+  margin: 20px 0;
+  }
+  .nav-links{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  }
+  .menu-btn{
+  display: none;
+  }
+  .nav-items a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 13px;
+  }
+  i{
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 13px;
+  margin-right: 15px;
+  color: #b6b6b6;
+  cursor: pointer;
+  }
+  li{
+  list-style: none;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  }
+  .logo{
+  height: 40px;
+  object-fit: cover;
+  }
+  button{
+  margin-left: auto;
+  color: white;
+  background-color: #b6b6b6;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 10px;
+  }
+  a{
+  color: #b6b6b6;
+  }
+  .img-block{
+  display: grid;
+  grid-template-columns: repeat(3, 200px) ;
+  grid-template-rows:300px 300px 300px 300px ;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  }
+  .foto-ten{
+  grid-column: 1/4;
+  } 
+  .img-block img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+  }
+  @media screen and (min-width: 1200px) {
+  nav{
+  justify-content: space-between;
+  margin: 20px 0;
+  }
+  .nav-links{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  }
+  .menu-btn{
+  display: none;
+  }
+  .nav-items a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 27px;
+  }
+  i{
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-right: 25px;
+  color: #b6b6b6;
+  cursor: pointer;
+  }
+  li{
+  list-style: none;
+  margin-right: 25px;
+  font-size: 17px;
+  cursor: pointer;
+  }
+  .logo{
+  height: 70px;
+  object-fit: cover;
+  }
+  button{
+  margin-left: auto;
+  color: white;
+  background-color: #b6b6b6;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 0 20px;
+  height: 50px;
+  margin-top: 10px;
+  }
+  a{
+  color: #b6b6b6;
+  }
+  .img-block {
+  display: grid;
+  grid-template-columns: repeat(4, 250px) ;
+  grid-template-rows:300px 300px 300px ;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+  }
+  .foto-ten{
+  grid-row-start: 4;
+  grid-row-end: -2;
+  }
+  .img-block {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+  }
