@@ -24,7 +24,7 @@
   }
   .img-block{
   display: grid;
-  grid-template-columns: 300px 300px ;
+  grid-template-columns: 40% 40%;
   grid-template-rows:repeat(5, 350px) ;
   justify-content: center;
   gap: 50px;
@@ -83,16 +83,21 @@
   border-radius: 1px;
   padding: 0 10px;
   }
+  button:hover{
+  background-color: transparent;
+  color: #b0afaf;
+  border: 1px black solid;
+  }
   a{
   color: #b6b6b6;
   }
   .img-block{
   display: grid;
-  grid-template-columns: repeat(3, 200px) ;
+  grid-template-columns: repeat(3, 28.5%) ;
   grid-template-rows:300px 300px 300px 300px ;
   justify-content: center;
   align-content: center;
-  gap: 50px;
+  gap: 30px;
   }
   .foto-ten{
   grid-column: 1/4;
@@ -165,7 +170,7 @@
   }
   .img-block {
   display: grid;
-  grid-template-columns: repeat(5, 190px) ;
+  grid-template-columns: repeat(5, 15.7%) ;
   grid-template-rows:200px 200px ;
   justify-content: center;
   align-content: center;
