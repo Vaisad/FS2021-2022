@@ -147,21 +147,21 @@
   padding: 0 20px;
   height: 50px;
   margin-top: 10px;
+  margin-right: 25px;
   }
   a{
   color: #b6b6b6;
   }
   .img-block {
   display: grid;
-  grid-template-columns: repeat(4, 250px) ;
-  grid-template-rows:300px 300px 300px ;
+  grid-template-columns: repeat(5, 190px) ;
+  grid-template-rows:200px 200px ;
   justify-content: center;
   align-content: center;
   gap: 50px;
   }
   .foto-ten{
-  grid-row-start: 4;
-  grid-row-end: -2;
+  grid-column: 5/-1;
   }
   .img-block {
   object-fit: cover;
