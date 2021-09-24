@@ -1,0 +1,19 @@
+{
+  "name": "sass-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaisad/FS2021-2022.git"
+  },
+  "author": "Vaidas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaisad/FS2021-2022/issues"
+  },
+  "homepage": "https://github.com/Vaisad/FS2021-2022#readme"
+}
