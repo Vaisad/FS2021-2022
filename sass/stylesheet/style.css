@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25vw)[4];
+      grid-template-columns: repeat(4, 25vw);
+}
+
+.container {
+  display: block;
+  border: 1px solid black;
+  border-right: none;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.container .forever {
+  font-size: x-small;
+  margin-bottom: 10px;
+}
+
+.container .zero {
+  background-color: #bebebe;
+  border-radius: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 20px;
+  margin: 0 37px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.container strong {
+  font-size: 20px;
+}
+
+.container sup {
+  font-size: 20px;
+}
+
+.container .lorem {
+  font-size: 14px;
+}
+
+.container button {
+  background-color: transparent;
+  border: 1px solid #303ca5;
+  color: #303ca5;
+  padding: 5px;
+  font-size: 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.container .no-credit {
+  font-size: small;
+  color: #abaaaa;
+  margin-bottom: 30px;
+}
+
+.container .whats {
+  font-size: small;
+  color: #abaaaa;
+}
+
+.container .up {
+  border-bottom: grey 1px dotted;
+  margin-bottom: 25px;
+}
+
+.container .up-next {
+  margin-bottom: 0;
+}
+
+.container .whats-2 {
+  font-size: small;
+  color: #abaaaa;
+  border-bottom: grey 1px dotted;
+}
+/*# sourceMappingURL=style.css.map */
