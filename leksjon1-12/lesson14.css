@@ -1,0 +1,45 @@
+i{
+    margin: 10px 10px;
+}
+.container-fluid{
+  display:flex;
+  height: 20px;
+  margin-top: 15px;
+}
+nav{
+    height: 40px;
+}
+input{
+    margin-top: 13px;
+}
+.logo-up {
+    margin-top: -10px;
+}
+.iphone-header {
+    width: 100%;
+}
+.bg-container {
+    background-color: #747b73;
+}
+.card-body a {
+    display: block;
+}
+.list-right-space {
+    margin-right: 30px;
+}
+.icon-circle {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    border-color: #b2b2b2 !important;
+    color: white;
+}
+.icon-links {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+    nav ul {
+        text-align: center;
+    }
+}
