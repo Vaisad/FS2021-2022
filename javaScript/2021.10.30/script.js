@@ -130,7 +130,7 @@ submit.addEventListener('click', (event) => {
     } else if (message == null || message == '') {
         inputTextarea.placeholder = 'type your message';
     } else {
-        submit.innerHTML = 'wwwwww';
+        submit.innerHTML = 'Your message was sent';
     }
     event.preventDefault();
 });
