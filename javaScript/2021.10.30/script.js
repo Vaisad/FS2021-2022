@@ -123,11 +123,11 @@ submit.addEventListener('click', (event) => {
         message = document.querySelector('#inputTextarea').value;
 
     if (username == null || username == '') {
-        alert('Type your name');
+        inputName.value = 'type your name';  
     } else if (email == null || email == '') {
-        alert('Type your email address');
+        inputEmail.value = 'type your email';
     } else if (message == null || message == '') {
-        alert('Type your message');
+        inputTextarea.value = 'type your message';
     } else {
         submit.innerHTML = 'Send';
     }
