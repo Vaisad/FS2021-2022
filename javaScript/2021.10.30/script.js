@@ -15,36 +15,36 @@ burger.innerHTML = '<i class="fas fa-bars"></i>';
 nav.appendChild(burger);
 
 burger.addEventListener('click', () => {
-    if (navList.style.display === 'none') {
-        navList.style.display = 'block';
-    } else {
+    if (navList.style.display === 'block') {
         navList.style.display = 'none';
+    } else {
+        navList.style.display = 'block';
     }
 })
 //----------------------------------------------------
-    let navList = document.createElement('ul');
-    navList.classList.add('lists');
-    header.appendChild(navList);
+let navList = document.createElement('ul');
+navList.classList.add('lists');
+header.appendChild(navList);
 
-    for (i = 0; i < 5; i++){
-        let element = document.createElement('a');
-        element.href = '#';
-        element.innerText = `Link`;
-        navList.appendChild(element);
-    };
+for (i = 0; i < 5; i++) {
+    let element = document.createElement('a');
+    element.href = '#';
+    element.innerText = `Link`;
+    navList.appendChild(element);
+};
 //--------------------------------------------------
 
 let section1 = document.createElement('section');
-section1.style["background"] = `url('image/1.jpg')`;
+section1.style['background'] = 'url("image/1.jpg")';
 section1.style['backgroundSize'] = 'cover';
 main.append(section1);
 
 let counter = 2;
 setInterval(function () {
-    section1.style["background"] = `url('image/${counter}.jpg')`;
+    section1.style['background'] = `url('image/${counter}.jpg')`;
     section1.style['backgroundSize'] = 'cover';
-    
-    
+
+
     counter++;
 
     if (counter === 4) {
@@ -64,6 +64,7 @@ setInterval(function () {
 }, 1000);
 
 main.append(section2);
+
 function getCurrentTime() {
     let currentTime = new Date();
 
@@ -123,13 +124,13 @@ submit.addEventListener('click', (event) => {
         message = document.querySelector('#inputTextarea').value;
 
     if (username == null || username == '') {
-        inputName.value = 'type your name';  
+        inputName.placeholder = 'type your name';
     } else if (email == null || email == '') {
-        inputEmail.value = 'type your email';
+        inputEmail.placeholder = 'type your email';
     } else if (message == null || message == '') {
-        inputTextarea.value = 'type your message';
+        inputTextarea.placeholder = 'type your message';
     } else {
-        submit.innerHTML = 'Send';
+        submit.innerHTML = 'wwwwww';
     }
     event.preventDefault();
 });
@@ -137,6 +138,3 @@ submit.addEventListener('click', (event) => {
 let footer = document.createElement('footer');
 footer.innerHTML = 'Copyright <span class="far fa-copyright" style="font-weight: bold;"> Vaidas Šauklys</span>';
 document.body.appendChild(footer);
-
-
-
