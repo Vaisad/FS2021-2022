@@ -10,6 +10,6 @@ getIntroduction(){
     return `${this.name} ${this.year} ${this.director}`;
 };
 getProfit(){
-    return this.income - this.budget;
-}
-} 
+    return `${this.income}` - this.budget;
+};
+}; 
