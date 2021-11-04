@@ -9,6 +9,7 @@ getIntroduction(){
  return `${this.make} ${this.model}`;
 };
 getAge(){
- return (new Date).getFullYear() - this.year;;
+        let age =  (new Date).getFullYear() - this.year;
+        return age <= 10 ? '10 years or later' : '11 years or older';
 }
 }; 
