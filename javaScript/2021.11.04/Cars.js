@@ -13,3 +13,4 @@ class Cars {
         return age <= 10 ? '10 years or later' : '11 years or older';
     }
 };
+
